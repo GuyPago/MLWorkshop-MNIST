@@ -1,0 +1,13 @@
+Cython==0.29.33
+dl==0.1.0
+docutils==0.19
+fastapi==0.94.1
+fastapi_router_controller==0.5.0
+numpy==1.23.4
+ordereddict==1.1
+Pillow==9.4.0
+pydantic==1.10.6
+pywin32==304
+torch==2.0.0
+torchvision==0.15.1
+uvicorn==0.21.1

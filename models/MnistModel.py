@@ -9,6 +9,7 @@ class MnistModel(BaseModel):
     criterion = torch.nn.CrossEntropyLoss()
 
     def predict(self, image):
+        self.net.eval()
         with torch.no_grad():
             pred = self.net(image).argmax()
 

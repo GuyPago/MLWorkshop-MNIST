@@ -1,4 +1,4 @@
-from torch import nn
+from torch import nn, Tensor
 
 
 class CNN(nn.Module):
@@ -32,7 +32,9 @@ class CNN(nn.Module):
             nn.Linear(64, 10)
         )
         
-    def forward(self, x):
+    def forward(self, x: Tensor):
+        x[x<0] = -1
+        x = x.unsqueeze(0)
         x = self.conv(x)
         x = x.view(x.size(0), -1)
         x = self.linear(x)

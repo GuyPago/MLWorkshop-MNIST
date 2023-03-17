@@ -3,11 +3,10 @@ dl==0.1.0
 docutils==0.19
 fastapi==0.94.1
 fastapi_router_controller==0.5.0
-numpy==1.23.4
 ordereddict==1.1
 Pillow==9.4.0
 pydantic==1.10.6
-pypiwin32==223
-torch==1.12.1
-torchvision==0.13.1
+torch
+torchvision
 uvicorn==0.21.1
+python-multipart
